@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'antd/lib/button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,15 +12,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Button type="primary">enter</Button>
         </header>
+
       </div>
     );
   }

@@ -4,6 +4,6 @@
 
 #### 引入ant-design
 
-- 1、按需加载，需要引入 [create-react-app ](https://github.com/timarney/react-app-rewired)
+- 1、按需加载，需要引入 [react-app-rewired](https://github.com/timarney/react-app-rewired)
 
 - 2、

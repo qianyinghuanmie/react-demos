@@ -1,9 +1,6 @@
-# react-demos
+### 从零开始，Webpack构建React
 
-#### 通过create-react-app快速生成
-
-#### 引入ant-design
-
-- 1、按需加载，需要引入 [react-app-rewired](https://github.com/timarney/react-app-rewired)
-
-- 2、加入less可修改ant-design主题颜色
+参考:
+  -[React](https://react.docschina.org/)
+  -[从零开始，教你用Webpack构建React基础工程](https://www.jianshu.com/p/4df92c335617/)
+  -[入门Webpack，看这篇就够了](https://www.jianshu.com/p/42e11515c10f)

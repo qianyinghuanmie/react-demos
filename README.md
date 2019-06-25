@@ -24,6 +24,6 @@ npm init
 
 ### 相关知识的简单梳理
 
-    - [react重要知识点的整理](/Doc/react.md)
-    + [react-router](/Doc/react-router.md)
-    # [redux](/Doc/redux.md)
+  - [react重要知识点的整理](/Doc/react.md)
+  + [react-router](/Doc/react-router.md)
+  * [redux](/Doc/redux.md)

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Button } from 'antd';
+
 
 class Component1 extends React.Component {
     render() {
         return (
-            <div>Hello World!</div>
+            <Button type="primary" htmlType="submit">随便一个颜色的按钮</Button>
         )
     }
 }

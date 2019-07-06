@@ -41,7 +41,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.scss$/,
+        test: /\.scss|\.sass$/,
         include: path.resolve(__dirname, 'src'),
         use: [
           "style-loader",

@@ -27,7 +27,7 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.jsx$/,
+        test: /\.jsx|\.js$/,
         exclude: /(node_modules)/,
         include: path.resolve(__dirname, 'src'),
         loader: "babel-loader"
@@ -83,15 +83,20 @@ module.exports = {
   ],
   devServer: {
     port: 8888,
+    contentBase: path.join(__dirname, '../dist'),
+    compress: true,
+    publicPath: `/dist/`,
+    index: 'index.html',
     // 使用热模块更新，必须安装插件
     hot: true,
     // 自动在启动后打开浏览器
-    open: true,
+    // open: true,
     openPage: 'dist/',
   },
   resolve: {
     // 配置寻找第三方库的时候的位置
-    modules: [path.resolve(__dirname, 'node_modules')] // extensions:['jsx','js','json']
+    modules: [path.resolve(__dirname, 'node_modules')], // extensions:['jsx','js','json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss', '.css']// 可以省略的后缀名
   },
   watchOptions: {
     // 不监听这些文件

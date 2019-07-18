@@ -1,10 +1,52 @@
 //main.js
-import React from 'react';
-import ReactDom from 'react-dom';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 
 import Component1 from './Component1.jsx';
+import Echarts from './Echarts.jsx';
+import App from './App.jsx';
+import routes from './routes.js';
 
-ReactDom.render(
-    <Component1 />,
-    document.getElementById('content')
-);
+class Index extends Component {
+    render() {
+        return (
+          <div className="main">
+            <Router basename="/dist">
+              <Switch>
+                {routes.map(route => (
+                  <Route
+                    key={route.path}
+                    exact
+                    path={route.path}
+                    component={route.component}
+                  />
+                ))}
+                <Route render={() => <div>No thing was found</div>} />
+              </Switch>
+            </Router>
+          </div>
+        );
+    }
+}
+
+
+
+ReactDOM.render(<Index />, document.getElementById('content'));
+//
+// ReactDOM.render(
+//  <Router  basename="/dist">
+//    <Switch>
+//      {routes.map(route => (
+//        <Route
+//          key={route.path}
+//          exact
+//          path={route.path}
+//          component={route.component}
+//        />
+//      ))}
+//      <Route render={() => <div>No thing was found</div>} />
+//    </Switch>
+//   </Router>,
+//   document.getElementById('content')
+// );

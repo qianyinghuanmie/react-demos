@@ -36,7 +36,7 @@ npm init
 
 #### 5 安装热启动插件
 
-#### 6 安装react-route-dom
+#### 6 安装react-route-dom,安装axios
 
 序号|功能|完成
 ---|:--:|---:

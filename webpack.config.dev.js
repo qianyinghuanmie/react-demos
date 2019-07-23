@@ -34,11 +34,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: path.resolve(__dirname, 'src'),
-        use: [
-          "style-loader",
-          "css-loader"
-        ]
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.scss|\.sass$/,
@@ -92,6 +88,16 @@ module.exports = {
     // 自动在启动后打开浏览器
     // open: true,
     openPage: 'dist/',
+    proxy: {
+      '/api': {
+        target: 'https://api.apiopen.top',
+        pathRewrite: {'^/api' : ''},
+        changeOrigin: true,     // target是域名的话，需要这个参数，
+        secure: false,          // 设置支持https协议的代理
+      },
+      '/api2': {
+      }
+    }
   },
   resolve: {
     // 配置寻找第三方库的时候的位置

@@ -14,3 +14,129 @@
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
+.container{
+  width: 100%;
+  max-width: 1080px;
+  margin:  0 auto;
+  text-align: center;
+  padding-top: 30vh;
+}
+.weather{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  text-align: left;
+}
+
+body {
+  background-color: #666;
+  margin: 0 auto;
+}
+
+#container {
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+  background-color: #666;
+}
+
+.glow, .letterpress, .stroke, 
+.gradient, .dimension, .embossed, 
+.striped, .knock {
+  width: 300px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.glow {
+  padding: 10px;
+  color: pink;
+  font: 60px 'Poiret One', cursive;
+  box-shadow: inset 0px 0px 10px #ffbbbb, 0px 0px 10px #ff0000;
+  text-shadow: 0px 0px 10px #ff0000, 2px 2px 4px #000;
+  border: 2px solid pink;
+  border-radius: 15px;
+  a{
+    color: pink;
+  }
+}
+
+h1 {
+  font: bold 50px arial, sans-serif;
+  background-color: #000;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, .3);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.letterpress {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.stroke {
+  font: 40px "Alfa Slab One", cursive;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+h2 {
+  font: 50px "Monoton", cursive;
+  background: -webkit-linear-gradient(40deg, #fff, pink); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0px;
+}
+
+.dimension {
+  margin-top: 20px;
+  font: bold 50px arial, sans-serif;
+  color: #ccc;
+  text-shadow: 4px 3px 0px #333,
+               3px 0px 0px #333,
+               2px 0px 0px #333,
+               1px 0px 0px #333, 
+               3px 0px 15px rgba(0,0,0, .8),
+               0px 4px 0px #444, 
+               0px 3px 0px #444, 
+               0px 2px 0px #444,
+               0px 1px 0px #444;
+
+}
+
+.embossed {
+  text-shadow: -1px -1px 0px rgba(255,255,255,.6), 1px 1px 0px rgba(0,0,0,0.8);
+  color: #555;
+  opacity: .9;
+  font: 40px "Alfa Slab One", cursive;
+  letter-spacing: 3px;
+}
+
+.striped {
+  font: bold 50px arial, sans-serif;
+  background: repeating-linear-gradient(
+              45deg,
+            #fff,
+            #fff 5px,
+            #ddd 5px, 
+            #ddd 10px);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -50px;
+}
+
+h4 {
+  font: 40px "Monoton", cursive;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/XV8R3PQ2TZ.jpg");
+}
+
+.knock {
+  margin-top: -40px;
+}

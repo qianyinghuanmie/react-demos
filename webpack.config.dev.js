@@ -90,12 +90,16 @@ module.exports = {
     openPage: 'dist/',
     proxy: {
       '/api': {
-        target: 'https://api.apiopen.top',
+        target: 'https://www.apiopen.top/',
         pathRewrite: {'^/api' : ''},
         changeOrigin: true,     // target是域名的话，需要这个参数，
         secure: false,          // 设置支持https协议的代理
       },
       '/api2': {
+        target: 'https://api.apiopen.top/registerUser',
+        pathRewrite: {'^/api' : ''},
+        changeOrigin: true,     // target是域名的话，需要这个参数，
+        secure: false,          // 设置支持https协议的代理
       }
     }
   },

@@ -29,23 +29,15 @@ export default class App extends React.Component {
         }}
       </Post>
       <div id="container">
-      <div class="glow"><Link to="/login">登录</Link></div>
-      <div class="letterpress"><h1>图表</h1></div>
-      <div class="stroke">Text Stroke</div>
-      <div class="gradient"><h2>Gradient</h2></div>
-      <div class="dimension">3D Text</div>
-      <div class="embossed">Embossed</div>
-      <div class="knock"><h4>Knockout</h4></div>
-      <div class="striped"><h3>STRIPED</h3></div>
+      <div className="glow"><Link to="/register">注册</Link></div>
+      <div className="letterpress"><h1><Link to="/login">登录</Link></h1></div>
+      <div className="stroke"><Link to="/echarts">图表</Link></div>
+      <div className="gradient"><h2>Gradient</h2></div>
+      <div className="dimension">3D Text</div>
+      <div className="embossed">Embossed</div>
+      <div className="knock"><h4>Knockout</h4></div>
+      <div className="striped"><h3>STRIPED</h3></div>
     </div>
-      <ul>
-        <li>
-          <Link to="/login">登录</Link>
-        </li>
-        <li>
-          <Link to="/echarts">图表</Link>
-        </li>
-      </ul>
     </div>);
   }
 }

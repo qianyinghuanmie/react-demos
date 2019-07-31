@@ -28,7 +28,7 @@
 
 ## 2 安装webpack，新建webpack.config.js进行必要配置
 
-## 3 安装react相关
+## 3 安装react相关yy
 
 ## 4 安装相关的loader，包括babel等等
 

@@ -21,4 +21,11 @@ export default [{
     }),
     path: "/login",
   },
+  {
+    component: Loadable({
+      loader: () => import('./container/register/register'),
+      loading: Loading,
+    }),
+    path: "/register",
+  }
 ];

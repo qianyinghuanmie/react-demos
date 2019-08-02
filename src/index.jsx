@@ -1,7 +1,7 @@
 //main.js
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {HashRouter as Router, Route, Link, Switch} from "react-router-dom";
 
 import zhCN from 'antd/es/locale-provider/zh_CN';
 import 'antd/dist/antd.css';

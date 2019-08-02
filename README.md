@@ -44,6 +44,14 @@
 2|登录|\
 3|ECharts引入|√
 
+### 功能点的一些思路
+
+首页是入口，然后是每个要做的功能的列表，api采用是免费api，使用webpack的属性做跨域处理。
+
+表单采用的是ant的表单 ，通过form.create的表单。
+
+头部也是ant中的pageheader.x
+
 ### 相关知识的简单梳理
 
 - [react重要知识点的整理](/Doc/react.md)

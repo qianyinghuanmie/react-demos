@@ -80,6 +80,7 @@ module.exports = {
   devServer: {
     port: 8888,
     contentBase: path.join(__dirname, '../dist'),
+    historyApiFallback:true,
     compress: true,
     publicPath: `/dist/`,
     index: 'index.html',

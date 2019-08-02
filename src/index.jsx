@@ -6,11 +6,7 @@ import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import zhCN from 'antd/es/locale-provider/zh_CN';
 import 'antd/dist/antd.css';
 
-import Component1 from './Component1.jsx';
-import Echarts from './Echarts.jsx';
-import App from './App.jsx';
 import routes from './routes.js';
-
 
 
 class Index extends Component {
@@ -34,6 +30,5 @@ class Index extends Component {
         );
     }
 }
-
 
 ReactDOM.render(<Index />, document.getElementById('content'));

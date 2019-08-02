@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.config.dev.js --progress --color --hot --open",
-    "build": "webpack --config webpack.config.dev.js --progress"
+    "start": "webpack-dev-server --config ./webpack.config.dev.js --progress --color --hot",
+    "build": "cross-env NODE_ENV=prod PACKAGE=prod webpack --config ./config/webpack.config.prod"
   },
   "author": "starwind",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-axios": "^2.0.3",
@@ -34,13 +35,16 @@
     "react-router-dom": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "url-loader": "^2.0.0",
     "webpack": "^4.35.0",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1",
     "webpack-cli": "^3.3.4"

@@ -28,15 +28,15 @@ export default class App extends React.Component {
           return (<div>Default message before request is made.</div>)
         }}
       </Post>
-      <div id="container">
-      <div className="glow"><Link to="/register">注册</Link></div>
-      <div className="letterpress"><h1><Link to="/login">登录</Link></h1></div>
-      <div className="stroke"><Link to="/echarts">图表</Link></div>
-      <div className="gradient"><h2>Gradient</h2></div>
-      <div className="dimension">3D Text</div>
-      <div className="embossed">Embossed</div>
-      <div className="knock"><h4>Knockout</h4></div>
-      <div className="striped"><h3>STRIPED</h3></div>
+          <div id="container">
+          <div className="glow"><Link to="/register">注册</Link></div>
+          <div className="letterpress"><h1><Link to="/login">登录</Link></h1></div>
+          <div className="stroke"><Link to="/echarts">图表</Link></div>
+          <div className="gradient"><h2>Gradient</h2></div>
+          <div className="dimension">3D Text</div>
+          <div className="embossed">Embossed</div>
+          <div className="knock"><h4>Knockout</h4></div>
+          <div className="striped"><h3>STRIPED</h3></div>
     </div>
     </div>);
   }

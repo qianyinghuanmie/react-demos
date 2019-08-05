@@ -8,7 +8,7 @@ class register  extends React.Component  {
   render() {
     return (
       <div>
-        <PageHeader onBack={() => null} title="注册" subTitle="请填写个人信息" />
+        <PageHeader onBack={() => this.props.history.push('/')} title="注册" subTitle="请填写个人信息" />
         <Myform/>
       </div>
     )

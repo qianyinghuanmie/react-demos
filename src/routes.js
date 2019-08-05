@@ -2,21 +2,21 @@ import Loadable from "react-loadable";
 import Loading from "./components/Loading.js";
 export default [{
     component: Loadable({
-      loader: () => import('./App'),
+      loader: () => import('./container/index/App'),
       loading: Loading,
     }),
     path: "/",
   },
   {
     component: Loadable({
-      loader: () => import('./Echarts'),
+      loader: () => import('./container/echarts/Echarts'),
       loading: Loading,
     }),
     path: "/Echarts",
   },
   {
     component: Loadable({
-      loader: () => import('./Component1'),
+      loader: () => import('./container/login/login'),
       loading: Loading,
     }),
     path: "/login",

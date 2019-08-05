@@ -70,7 +70,7 @@ class HorizontalLoginForm extends React.Component {
                 </Form.Item>
                 <Form.Item>
                     <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-                        注册
+                        登录
           </Button>
                 </Form.Item>
             </Form>
